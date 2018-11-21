@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+/*Overordnet styling*/
+.container{
+	display:flex;
+	flex-wrap: wrap;/*Gør at hvis der ikke er plads smider den det ned på næste linje*/
+	justify-content: space-between;
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	border: 0; 
+	padding: 0;
+	
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.logo{
+    width: 16%;
+	padding-bottom: 70px;
+}
+
+.nav a{
+	text-decoration: none;
+	color: black;
+	float: right;
+	margin-top: 70px;
+	margin-right: 50px;
+	font-size: 20px;	
+}
+
+
+nav{
+	width: 75%;
+	height: 50px;
+}
+
+
+.banner{
+	width: 31%;
+	height: 70px;
+	background: green;
+}
+
+.kampagne{
+	border: 2px solid black;
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 100%;
+	display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*Styling til projekter og om sweetbot siden*/
+
+article{
+	width: 50%;
+	align-content: center;
+	margin-left: 25%;
+	margin-right: 15%;
+	text-align: center;
+	}
+
+.hotbot{
+	padding-right: 60px;
+	padding-bottom: 20px;
+}
+.digitalsecurity{
+	padding-left: 10px;
+}
+.webudvikling{
+	padding-left: 20px;
+}
+.branding{
+	padding-left: 0px;
+}
+
+.beskrivelse{
+	padding-bottom: 50px;
+}
+
+a{
+	color: black;
+}
+.beskrivelse{
+	
+	width: 50%;
+	margin-left: 25%;
+}
+
+/*styling af medarbejder siden*/
+
+.medarbejder{
+	width: 80%;
+	margin-left: 15%;
+	padding-bottom: 50px;
+	
+}
+
+.freelance{
+	width: 100%;
+	font-size: 20px;
+	margin-left: 38%;
+}
+
+
+/*styling af kontakt siden*/
+
+.kontaktbanner{
+	width: 100%;
+	text-align: center;
+}
+
+form{ 
+	margin-right: 490px;
+    width: 650px;
+	margin-left: 490px;
+	margin-top: 5px; 
+	padding: 10px;
+	border-radius: 6px;
+		}
+		
+input[type=text], select, textarea {
+    width: 90%; 
+    padding: 15px;   
+    border: 2px solid gray; 
+    border-radius: 2px; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    resize: vertical 
+}
+		
+input[type=email],select, textarea{
+	width: 90%; 
+    padding: 15px;   
+    border: 2px solid gray; 
+    border-radius: 0px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+textarea{
+	height: 200px;
+}
+
+input[type=submit] {
+    color: black;
+	background-color: #D7D7D7;
+    padding: 12px 20px;
+    border: 2px solid gray;
+    border-radius: 4px;
+	width: 100px;
+	height: 50px;
+}
+
+input[type=submit]:hover {
+    background-color:#6B6B6B;
+}
+
+
+
+
+
+.kontakt{
+	
+	margin-left: 3%;
+	width: 90%;
+}
+
+
+
+/*Styling spicelt til mobil*/
+aside, footer{
+	display:none;
+}
