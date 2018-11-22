@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Kontakt</title>
-	<link rel="stylesheet" href="../stylingmobil.css"><br>
-	<link rel="stylesheet" href="../stylingtablet.css" media="screen and (min-width:800px)">
-	<link rel="stylesheet" href="../stylingdisktop.css" media="screen and (min-width:1000px)">
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../stylesheet/stylingdisktop.css">
+	<link rel="stylesheet" href="../stylesheet/stylingtablet.css" media="screen and (max-width:800px)">
+	<link rel="stylesheet" href="../stylesheet/stylingmobil.css" media="screen and (max-width:600px)" >
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,36 +18,41 @@
 			 <a href="../index.html"><img src="../iconer/sweetboot.design.png" alt="logo" width="400px"></a>
 		</div>
 		
-		
-		
-	    <nav class=" item nav">
-			<a href="kontakt.html">Kontakt</a>
-			<a href="medarbejdere.html">Medarbejder</a>
-			<a href="hotbot.html">HotBot</a>
-	    	<a href="omsweetbot.html">Om Sweetbot</a>			
-			<a href="projekter.html">Produkter</a>
-			</nav>
+	<nav>
 			
-			<div class="kontaktbanner">
+		  <div class="toggle">
+			  <i class="fa fa-bars menu" aria-hidden="true"></i>
+		  </div>
+				  
+			<ul>
+				<li><a href="projekter.html">Produkter</a></li>
+				<li><a href="omsweetbot.html">Om Sweetbot</a>
+				<li><a href="hotbot.html">Hotbot</a>
+				<li><a href="medarbejdere.html">Medarbejder</a>
+				<li><a href="kontakt.html">Kontakt</a>
+			</ul>
+	  </nav>
+			
+			<div class="kontaktbanner z-index">
 		<h1>Kontakt</h1>
 			</div>		
 			
-			<div class="kontakt">
+			<div class="kontakt z-index">
 			
 	<form action="mailto:s.simpensperle@©mail.com" method="post" enctype="text/plain">
                   <p>
-	                <label>Dit navn:</label>
+	                <label>Navn:</label>
 	              </p>	
 	              <p>
-                    <input type="text" name="name" placeholder="Skriv dit navn.." autofocus required>
+                    <input type="text" name="name" placeholder="Navn.." autofocus required>
 	              </p>
 		
 		
 	              <p>
-	                 <label>Din Email:</label>
+	                 <label>Email:</label>
 	              </p>
 	              <p>
-	                <input type="email" name="email" placeholder="Skriv din email.." required>
+	                <input type="email" name="email" placeholder="Email.." required>
 	              </p>
 		
 		
@@ -53,14 +60,14 @@
 					 <label>Emne:</label> 
 		          </p>
 		          <p>
-					 <input type="text" name="emne" placeholder="Skriv et emne.." required> 
+					 <input type="text" name="emne" placeholder="Emne.." required> 
 		         </p>
 		
 	              <p>
-		            <label>Din besked:</label>
+		            <label>Besked:</label>
                   </p>
 	              <p>
-                    <textarea name="comment" placeholder="Din besked..."></textarea>
+                    <textarea name="comment" placeholder="Besked.."></textarea>
 	             </p>
 		
 				<input type="submit" value="Send">
@@ -70,11 +77,22 @@
 </div>
 	<div>	
 		<footer>
-	    <p class="bund"><img src="../iconer/telefon.png" alt="telefon" height="25px"> 12 34 56 78</p>
-		<p class="bund"><img src="../iconer/mail.png" alt="mail" height="25px">  Sweetbot@design.com</p>
-		<p class="bund"><img src="../iconer/adresse.png" alt="adresse" height="25px"> Victoria Street 34, London</p>
+	    <p class="bund"><img src="../iconer/telefon.png" alt="telefon" height="25px" class="footer"> 12 34 56 78</p>
+		<p class="bund"><img src="../iconer/mail.png" alt="mail" height="25px" class="footer">  Sweetbot@design.com</p>
+		<p class="bund"><img src="../iconer/adresse.png" alt="adresse" height="25px" class="footer"> Victoria Street 34, London</p>
 		<p class="copy">&copy; Sweetbot, London</p>
 		</footer>
 	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+				  
+		$(document).ready(function(){
+			  $(".menu").click(function(){
+				$("ul").toggleClass("active");
+			})
+		})
+				  
+		</script>
 </body>
 </html>

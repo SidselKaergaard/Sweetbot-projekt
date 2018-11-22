@@ -1,5 +1,80 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Lato');
+/* CSS Document */
+
+/*CSS til store skærme fx disktop*/
+
+/*NAV*/
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	width: 65%;
+	float: right;
+}
+
+ul{
+	width: 65%;
+	margin: 0 auto;
+	padding: 0;
+	float: right;
+	margin-top: 80px;
+	
+}
+
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+	
+}
+
+ul li:hover{
+	background: lightgray;
+}
+
+ul li a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	text-align: right;
+	box-sizing: border-box;
+	color:black;
+	font-size: 30px;
+	display: none;
+}
+@media (max-width:600px)
+{
+	.toggle{
+		display:block;
+	}	
+	ul
+	{
+	 width: 100%;
+	 display: none;
+	 background: #E8E8E8;
+	}
+	ul li
+	{
+	 display: block;
+	 text-align: center;	
+	}	
+	.active{
+		display: block;
+	}
+}
+
+
+.z-index{
+	z-index: -1;
+}
+
 
 
 /*Overordnet styling*/
@@ -13,8 +88,7 @@
 * {
 	margin: 0;
 	border: 0; 
-	padding: 0;
-	
+	padding: 0;	
 }
 
 body{
@@ -22,24 +96,12 @@ body{
 }
 
 .logo{
-    width: 16%;
+	
+    width: 26%;
+	padding-top: 20px;
 	padding-bottom: 70px;
 }
 
-.nav a{
-	text-decoration: none;
-	color: black;
-	float: right;
-	margin-top: 70px;
-	margin-right: 50px;
-	font-size: 20px;	
-}
-
-
-nav{
-	width: 75%;
-	height: 50px;
-}
 
 
 .banner{
@@ -63,58 +125,97 @@ img {
 
 /*Styling til projekter og om sweetbot siden*/
 
-article{
-	width: 50%;
-	align-content: center;
-	margin-left: 25%;
-	margin-right: 15%;
-	text-align: center;
-	}
 
 .hotbot{
+	width: 30%;
 	padding-right: 60px;
 	padding-bottom: 20px;
 }
 .digitalsecurity{
+	width: 25%;
 	padding-left: 10px;
 }
 .webudvikling{
+	width: 24%;
 	padding-left: 20px;
 }
 .branding{
+	width: 20%;
 	padding-left: 0px;
 }
 
 .beskrivelse{
+	width: 30%;
 	padding-bottom: 50px;
+}
+
+.kvalitet{
+	width: 30%;
+}
+
+.ambitioner{
+	width: 40%;
+}
+
+.formål{
+	width: 30%;
+}
+
+.betaling{
+	width: 30%;
+}
+.telefon{
+	width: 25%;
 }
 
 a{
 	color: black;
 }
 .beskrivelse{
-	
+	font-size: 20px;
 	width: 50%;
 	margin-left: 25%;
 }
 
+.artikel{
+	width: 100%;
+	align-content: center;
+	text-align: center;
+}
+
+
+
 /*styling af medarbejder siden*/
 
-.medarbejder{
-	width: 80%;
-	margin-left: 15%;
-	padding-bottom: 50px;
-	
-}
 
 .freelance{
 	width: 100%;
-	font-size: 20px;
-	margin-left: 38%;
+	padding-left: 90px;
+    
+	
+}
+
+.medarbejder{
+	width: 100%;
+	margin-left: 9%;
+	padding-bottom: 50px;
+}
+
+img.medarbejdere{
+	width: 30%;
 }
 
 
+
 /*styling af kontakt siden*/
+
+
+
+.kontakt{
+	
+	margin-left: 3%;
+	width: 90%;
+}
 
 .kontaktbanner{
 	width: 100%;
@@ -169,10 +270,6 @@ input[type=submit]:hover {
     background-color:#6B6B6B;
 }
 
-
-
-
-
 .kontakt{
 	
 	margin-left: 3%;
@@ -180,8 +277,43 @@ input[type=submit]:hover {
 }
 
 
+/*Styling på footer*/
+footer{
+	display:block;
+	bottom: 0;
+	background: #B5B2B0;
+	border: none;
+	float: right;
+	width: 100%;
+	height: 100px;
+	margin-top: 3%;
 
-/*Styling spicelt til mobil*/
-aside, footer{
-	display:none;
+}
+
+.bund{
+	width: 15%;
+	float: right;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-left: 15px;
+}
+
+.copy{
+	font-size: 18px;
+	margin-left: 50px;
+	padding-top: 40px;
+}
+
+img.footer{
+	width: 5%;
+}
+
+
+
+/*Media query indlejeret i dette stylesheet. Låser layoutet ved 1200px bredde*/
+@media screen and (min-width:1400px){
+	.container{
+		max-width: none;
+		margin: 0 auto;
+	}
 }

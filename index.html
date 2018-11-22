@@ -4,9 +4,11 @@
 <meta charset="UTF-8">
 <title>Index</title>
 	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylingmobil.css"><br>
-	<link rel="stylesheet" href="stylingtablet.css" media="screen and (min-width:800px)">
-	<link rel="stylesheet" href="stylingdisktop.css" media="screen and (min-width:1000px)">
+	<link rel="stylesheet" href="stylesheet/stylingdisktop.css">
+	<link rel="stylesheet" href="stylesheet/stylingtablet.css" media="screen and (max-width:800px)">
+	<link rel="stylesheet" href="stylesheet/stylingmobil.css" media="screen and (max-width:600px)" >
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -17,27 +19,44 @@
 		</div>
 		
 		
+		<nav>
+			
+		  <div class="toggle">
+			  <i class="fa fa-bars menu" aria-hidden="true"></i>
+		  </div>
+				  
+			<ul>
+				<li><a href="pages/projekter.html">Produkter</a></li>
+				<li><a href="pages/omsweetbot.html">Om Sweetbot</a>
+				<li><a href="pages/hotbot.html">Hotbot</a>
+				<li><a href="pages/medarbejdere.html">Medarbejder</a>
+				<li><a href="pages/kontakt.html">Kontakt</a>
+			</ul>
+	  </nav>
 		
-	    <nav class=" item nav">
-			<a href="pages/kontakt.html">Kontakt</a>
-			<a href="pages/medarbejdere.html">Medarbejder</a>
-			<a href="pages/hotbot.html">HotBot</a>
-	    	<a href="pages/omsweetbot.html">Om Sweetbot</a>			
-			<a href="pages/projekter.html">Produkter</a>
-	    </nav>
+
 		
-		<div>
-		<img src="iconer/kampange.png" alt="kampange" class="kampange" width="100%">
+		<div class="z-index">
+			<img src="iconer/kampange.png" alt="kampange" class="kampange" width="100%">
 		</div>
 		
 		<footer>
-	    <p class="bund"><img src="iconer/telefon.png" alt="telefon" height="25px"> 12 34 56 78</p>
-		<p class="bund"><img src="iconer/mail.png" alt="mail" height="25px">  Sweetbot@design.com</p>
-		<p class="bund"><img src="iconer/adresse.png" alt="adresse" height="25px"> Victoria Street 34, London</p>
+	    <p class="bund"><img src="iconer/telefon.png" alt="telefon" height="25px" class="footer"> 12 34 56 78</p>
+		<p class="bund"><img src="iconer/mail.png" alt="mail" height="25px" class="footer">  Sweetbot@design.com</p>
+		<p class="bund"><img src="iconer/adresse.png" alt="adresse" height="25px" class="footer"> Victoria Street 34, London</p>
 		<p class="copy">&copy; Sweetbot, London</p>
 		</footer>
 	</div>
 	
-
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+				  
+		$(document).ready(function(){
+			  $(".menu").click(function(){
+				$("ul").toggleClass("active");
+			})
+		})
+				  
+		</script>
 </body>
 </html>

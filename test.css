@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	width: 60%;
+	float: right;
+}
+
+ul{
+	width: 60%;
+	margin: 0 auto;
+	padding: 0;
+	float: right;
+	
+}
+
+ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+	
+}
+
+ul li:hover{
+	background: lightgray;
+}
+
+ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	text-align: right;
+	box-sizing: border-box;
+	color:black;
+	font-size: 30px;
+	display: none;
+}
+@media (max-width:600px)
+{
+	.toggle{
+		display:block;
+	}	
+	ul
+	{
+	 width: 100%;
+	 display: none;
+	}
+	ul li
+	{
+	 display: block;
+	 text-align: center;	
+	}	
+	.active{
+		display: block;
+	}
+}
+
+
+
+
+
